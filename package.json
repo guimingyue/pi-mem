@@ -1,0 +1,26 @@
+{
+	"name": "pi-mem",
+	"version": "0.1.0",
+	"description": "Persistent memory for pi: Markdown memories in user and project scopes, injected as an index, saved automatically",
+	"type": "module",
+	"license": "MIT",
+	"keywords": ["pi-package", "pi", "pi-extension", "memory"],
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"files": ["index.ts", "src", "README.md", "LICENSE"],
+	"scripts": {
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@earendil-works/pi-agent-core": "1.4.0",
+		"@earendil-works/pi-ai": "1.4.0",
+		"@earendil-works/pi-coding-agent": "1.4.0"
+	},
+	"devDependencies": {
+		"@types/node": "26.6.6",
+		"typescript": "5.9.3",
+		"vitest": "3.2.7"
+	}
+}
